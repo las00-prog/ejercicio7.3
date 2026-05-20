@@ -1,0 +1,132 @@
+   * { margin: 0; padding: 0; border-collapse: collapse;}
+ 
+    body {
+      background-image: url(../IMG/ahorcado.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 150px 20px;
+    }
+ 
+    /* ── Título amarillo centrado arriba ── */
+    h1 {
+      color: #f5c518;
+      font-size: 80px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #000;
+    }
+ 
+    /* ── Dos paneles uno al lado del otro ── */
+    #main-container {
+      display: flex;
+      gap: 60px;
+      width: 900px;
+      min-height: 420px;         /* altura fija igual que la imagen */
+    }
+ 
+    /* ── PANEL IZQUIERDO ── */
+    #left-panel {
+      background: #1e8c1e;
+      border-radius: 20px;
+      padding: 30px 30px 24px 30px;
+      display: flex;
+      width: 60%;
+      flex-direction: column;
+      align-items: flex-start;   /* elementos alineados a la izquierda */
+      justify-content: flex-start;
+      gap: 29px;
+    }
+
+
+     #right-panel {
+      background: #1e8c1e;
+      border-radius: 20px;
+      padding-bottom: 24px;
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    /* Imagen del ahorcado centrada en el panel */
+    #imagen {
+      width: 200px;
+      height: 200px;
+      background: #ffffff;
+      object-fit: contain;
+      align-self: center;        /* centrada horizontalmente */
+    }
+ 
+    /* Barra blanca ancha de la palabra */
+    #palabra {
+      display: block;
+      margin-inline: auto;
+      background: #ffffff;
+      color: #000;
+      font-size: 25px;
+      font-weight: bold;
+      padding: 10px;
+      height: 25px;
+      width: 220px; 
+      text-align: center;
+    }
+ 
+
+    /* Input letra pequeño amarillo (id="letra") */
+    #letra {
+      width: 40px;
+      height: 30px;
+      font-size: 25px;
+      text-align: center;
+      background: #ffffff;
+      border: 2px solid yellow;
+      color: #000;
+
+    }
+ 
+    /* Botón ENVIAR gris claro */
+    #boton {
+    
+      cursor: pointer;
+      
+    
+    }
+
+
+    #boton:hover 
+    { background: #ffd000;}
+
+    #right-panel h2 {
+      color: #f5c518;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+ 
+    /* Título LLISTAT DE LLETRES */
+    #right-panel h2 {
+      color: #f5c518;
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+ 
+    /* Caja blanca lista de letras (id="lista_letras") */
+    #lista_letras {
+      background: #ffffff;
+      width: 60%;
+      flex: 1;
+      padding: 12px;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 4px;
+      color: #000;
+      line-height: 2;}

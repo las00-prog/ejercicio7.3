@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>El Ahorcado</title>
+</head>
+<body onload="Inicializar()">
+  <h1> El ahorcado</h1>
+ 
+  <div id="main-container">
+ 
+    <!-- PANEL IZQUIERDO -->
+    <div id="left-panel">
+ 
+      <!-- Imagen del ahorcado q cambia segun los errores con función DIBUJAR -->
+      <img id="imagen" src="" alt="">
+ 
+      <!-- Palabra con guiones (id="palabra") -->
+      <div id="palabra"></div>
+ 
+      <!-- Input letra + botón enviar -->
+      <div>
+        <input type="text" id="letra" maxlength="1" placeholder="Letra">
+        <button id="boton" onclick="enviarLetra()">ENVIAR</button>
+      </div>
+    </div>
+ 
+    <!-- PANEL DERECHO -->
+    <div id="right-panel">
+      <h2>Lista de Letras</h2>
+      <!-- Lista de letras introducidas (id="lista_letras") -->
+      <div id="lista_letras"></div>
+    </div>
+ 
+  </div>
+   
+  <script src="JS/js7-3.js"></script>
+</body>
+</html>
