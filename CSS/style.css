@@ -1,131 +1,177 @@
    * { margin: 0; padding: 0; border-collapse: collapse;}
  
-    body {
-      background-image: url(../IMG);
-      background-repeat: no-repeat;
-      background-size: cover;
-      min-height: 150px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 150px 20px;
-    }
- 
-    /* ── Título amarillo centrado arriba ── */
-    h1 {
-      color: #f5c518;
-      font-size: 80px;
-      font-weight: 900;
-      letter-spacing: 3px;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px #000;
-    }
- 
-    /* ── Dos paneles uno al lado del otro ── */
-    #main-container {
-      display: flex;
-      gap: 60px;
-      width: 900px;
-      min-height: 420px;         /* altura fija igual que la imagen */
-    }
- 
-    /* ── PANEL IZQUIERDO ── */
-    #left-panel {
-      background: #1e8c1e;
-      border-radius: 20px;
-      padding: 30px 30px 24px 30px;
-      display: flex;
-      width: 60%;
-      flex-direction: column;
-      align-items: flex-start;   /* elementos alineados a la izquierda */
-      justify-content: flex-start;
-      gap: 29px;
-    }
+  body {
+   background-image: url(../IMG/21967857-forest-6578551_1920.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-     #right-panel {
-      background: #ffffff;
-      border-radius: 20px;
-      padding-bottom: 24px;
-      width: 35%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-    }
-    /* Imagen del ahorcado centrada en el panel */
-    #imagen {
-      width: 200px;
-      height: 200px;
-      background: #ffffff;
-      object-fit: contain;
-      align-self: center;        /* centrada horizontalmente */
-    }
- 
-    /* Barra blanca ancha de la palabra */
-    #palabra {
-      display: block;
-      margin-inline: auto;
-      background: #ffffff;
-      color: #000;
-      font-size: 25px;
-      font-weight: bold;
-      padding: 10px;
-      height: 25px;
-      width: 220px; 
-      text-align: center;
-    }
- 
+h1 {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px #000;
+}
 
-    /* Input letra pequeño amarillo (id="letra") */
-    #letra {
-      width: 70px;
-      height: 30px;
-      font-size: 25px;
-      text-align: center;
-      background: #010101;
-      border: 1px solid yellow;
-      color: #000;
+#main-container {
+    display: flex;
+    gap: 40px;
+    width: 900px;
+    min-height: 420px;
+}
 
-    }
- 
-    /* Botón ENVIAR gris claro */
-    #boton {
-    
-      cursor: pointer;
-      
-    
-    }
+#left-panel {
+   color: #ffffff;
+   background-color:  #979191;
+    border-radius: 20px;
+    padding: 30px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 
+}
 
-    #boton:hover 
-    { background: #ffd000;}
+#right-panel {
+    background-color: #979191;
+    border-radius: 20px;
+    padding: 20px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
 
-    #right-panel h2 {
-      color: #f5c518;
-      font-size: 13px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      text-align: center;
-    }
- 
-    /* Título LLISTAT DE LLETRES */
-    #right-panel h2 {
-      color: #f5c518;
-      font-size: 25px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      text-align: center;
-    }
- 
-    /* Caja blanca lista de letras (id="lista_letras") */
-    #lista_letras {
-      background: #ffffff;
-      width: 60%;
-      flex: 1;
-      padding: 12px;
-      font-size: 30px;
-      font-weight: bold;
-      letter-spacing: 4px;
-      color: #000;
-      line-height: 2;}
+#imagen {
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+#palabra {
+    background: white;
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 12px;
+    width: 240px;
+    text-align: center;
+    border-radius: 10px;
+    letter-spacing: 5px;
+}
+
+#letra {
+    width: 70px;
+    height: 35px;
+    font-size: 22px;
+    text-align: center;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}
+
+#boton {
+    padding: 8px 15px;
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#boton:hover {
+    background: #04004a;
+}
+
+#right-panel h2 {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+#lista_letras {
+    width: 80%;
+    padding: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fffcfc;
+    text-align: center;
+}
+
+#final-ganar,
+#final-perder {
+    position: fixed;
+    width: 350px;
+    height: 220px;
+    top: 50%;
+    left: 50%;
+    margin-left: -175px;
+    margin-top: -110px;
+    background: rgb(67, 48, 48);
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+#final-ganar h2 {
+    color: #2e7d32;
+}
+
+#final-perder h2 {
+    color: #ff0000;
+}
+
+#solucion {
+    font-size: 20px;
+    font-weight: bold;
+    color:#ffffff;
+
+}
+
+#boton-ganar,
+#boton-perder {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#final-ganar,
+#final-perder {
+    position: fixed;
+    width: 350px;
+    height: 330px;
+    top: 50%;
+    left: 50%;
+    margin-left: -175px;
+    margin-top: -165px;
+    background: #333;
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.imagen-final {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin: 0%;
+    display: block;
+    margin-inline: auto;
+}
