@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>El Ahorcado de GTA V</title>
+    <title>El Ahorcado</title>
 </head>
 <body onload="Inicializar()">
-  <h1> El ahorcado de GTA V</h1>
+  <h1> El ahorcado</h1>
  
   <div id="main-container">
  
@@ -37,13 +37,15 @@
   </div>
 
   <div id="final-ganar" style="display:none;">
-    <h2>¡Felicidades! Has ganado</h2>
+    <img id="imagen-final-ganar" class="imagen-final">
+    <h2>¡Felicidades bro, ganaste </h2>
     <button id="boton-ganar" onclick="Inicializar()">Jugar de nuevo</button>
   </div>
   
   <div id="final-perder" style="display:none;">
-    <h2>¡Lo siento! Has perdido</h2>
+    <h2>Perdiste bro, la palabra era:</h2>
     <p id="solucion"></p>
+    <img id="imagen-final-perder" class="imagen-final">
     <button id="boton-perder" onclick="Inicializar()">Jugar de nuevo</button>
   </div>
 
